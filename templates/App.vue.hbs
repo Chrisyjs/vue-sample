@@ -1,9 +1,9 @@
 <template>
   <div id="app">
     <router-link to="/Home">go Home</router-link>
-    <router-link to="/about">go about</router-link>
-    <router-link to="/hhh">go hhh</router-link>
-    <router-link to="/other">go other</router-link>
+    {{#each list}}
+    <router-link to="/{{name}}">go {{name}}</router-link>
+    {{/each}}
     <router-view></router-view>
   </div>
 </template>
